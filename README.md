@@ -3,7 +3,7 @@
 
 # 特徴
 - ### インフラ面
-  - EKSで構築。Terraform使用。
+  - EKSで構築(ALB、オートスケーリング)。Terraform使用。
   - 開発minikube、skaffold
 - ### バックエンド面
   - GraphQL(Rails)
@@ -13,7 +13,8 @@
   - Next.js、react-query、axiosを使用
 
 # クラウドアーキテクチャー
-![CloudDiagram](https://user-images.githubusercontent.com/89893576/131615273-f69901fa-0807-4a0a-b5c2-b22fabd97165.jpg)
+![CloudDiagram](https://user-images.githubusercontent.com/89893576/131626097-8bd3a531-6c4c-4f32-9732-f907a83e08c3.jpg)
+
 
 
 ## 機能一覧
