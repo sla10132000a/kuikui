@@ -1,0 +1,43 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node server.js",
+    "dev2": "next dev -p 3020",
+    "dev:https": "set HTTPS=true&&node ./server.js -p 3010",
+    "build": "next build",
+    "start": "next start -p 4000",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@heroicons/react": "^1.0.3",
+    "@reduxjs/toolkit": "^1.6.1",
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "google-protobuf": "^3.18.0-rc.1",
+    "graphql": "^15.5.1",
+    "graphql-request": "^3.5.0",
+    "http-proxy-middleware": "^2.0.1",
+    "next": "11.0.1",
+    "next-connect": "^0.10.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-modal": "^3.14.3",
+    "react-query": "^3.19.1",
+    "react-query-devtools": "^2.6.3",
+    "react-redux": "^7.2.4",
+    "universal-cookie": "^4.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^16.4.10",
+    "@types/react": "^17.0.15",
+    "@types/react-redux": "^7.1.18",
+    "autoprefixer": "^10.3.1",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.0.1",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7",
+    "typescript": "^4.3.5"
+  }
+}

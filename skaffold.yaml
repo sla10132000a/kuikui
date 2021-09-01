@@ -1,0 +1,32 @@
+apiVersion: skaffold/v1beta12
+kind: Config
+
+build:
+  local:
+    useBuildkit: false
+  artifacts:
+  - image: 833812018788.dkr.ecr.ap-northeast-1.amazonaws.com/backend
+    context: backend
+  - image: 833812018788.dkr.ecr.ap-northeast-1.amazonaws.com/nextjs
+    context: frontend
+
+deploy:
+  kubectl:
+    manifests:
+        - ./infra/k8s/frontend-local.yaml
+        - ./infra/k8s/backend-local.yaml
+        - ./infra/k8s/ingress-local.yaml
+    
+profiles:
+- name: prd
+  build:
+    local:
+      push: true
+  deploy:
+    kubectl:
+      manifests:
+        - ./infra/k8s/rbac-role.yaml
+        - ./infra/k8s/alb-ingress-controller.yaml
+        - ./infra/k8s/frontend.yaml
+        - ./infra/k8s/backend.yaml
+        - ./infra/k8s/ingress.yaml
