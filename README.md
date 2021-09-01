@@ -13,7 +13,8 @@
   - Next.js、react-query、axiosを使用
 
 # クラウドアーキテクチャー
-![CloudDiagram](https://user-images.githubusercontent.com/89893576/131626097-8bd3a531-6c4c-4f32-9732-f907a83e08c3.jpg)
+![CloudDiagram](https://user-images.githubusercontent.com/89893576/131626438-13b338b3-62b8-47c0-b483-c1c0c12232c2.jpg)
+
 
 
 
